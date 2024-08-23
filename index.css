@@ -1,0 +1,21 @@
+body {
+  background-image: url(./d471abafc2f65ea1368ebcd0e6adaed4.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#submitButton {
+  background-color: #000000;
+  color: rgb(254, 164, 209);
+  font-weight: 900;
+  border: solid white;
+  border-radius: 4px;
+}

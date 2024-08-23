@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  background: #000000;
+  --gap: 1em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+}
+#addButton {
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  /* height: 20px;
+  width: 30px; */
+  font-size: 7px;
+  font-weight: 700;
+}
+#container {
+  height: 200px;
+  width: 230px;
+  --color: #e1e1e1;
+  background-color: #f3f3f3;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 30px 30px;
+  border-radius: 5px;
+  overflow: scroll;
+}
+#input {
+  font-size: 7px;
+}
+#inputAndButton {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5px;
+  gap: 3px;
+}
+#img {
+  border-radius: 10px;
+  width: 22px;
+  height: 22px;
+  margin-right: 3px;
+}
+#about2 {
+  display: flex;
+  flex-direction: column;
+}
+#phonenumber {
+  color: white;
+  font-size: 8px;
+}
+#aboutAll {
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  position: relative;
+  right: 205px;
+  bottom: 20px;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+}
+#phone2 {
+  display: flex;
+  flex-direction: row;
+}
